@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Iceclean-flex">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Vedha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-image: url(/Iceclean-flex/img/1649844299819.jpeg);
+    }
+
+    .full {
+        background-color: rgba(26, 118, 223, 0.7);
+        display: flex;
+        justify-content: center;
+    }
+
+    .box>div {
+        width: 50%
+    }
+
+    .box,
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        font-size: large;
+        color: white;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+    }
+
+    .contact>div:first-child {
+        width: 50%;
+    }
+
+    .icon {
+        text-align: right;
+    }
+
+    .icon>i {
+        color: white;
+    }
+
+    .row1 {
+        background-color: rgba(26, 118, 223, 0.2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ice {
+        width: 20%
+    }
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-end
+    }
+
+    
+
+    ::placeholder {
+        color: rgb(20, 118, 238)
+    }
+
+    .form1 input{
+        background-color: rgba(26, 118, 223, 0.2);
+        border: 0;
+        color: white;
+
+    }
+
+    nav {
+        background-color: rgb(51, 127, 213);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box1>div {
+        width: 100%
+    }
+
+    .anc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .anc>a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 100;
+        display: inline-block;
+        padding: 10px 0px;
+
+    }
+
+    .anc a:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        color: rgb(3, 3, 3);
+        padding: 10px;
+    }
+
+    .fouri {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fouri>div {
+        width: 25%;
+    }
+
+    .fouri h2,
+    .r2>div h3,
+    .r3>div h3 {
+        color: rgb(51, 127, 213);
+        text-align: center;
+        margin: 0%;
+        padding-top: 20px;
+    }
+
+    .fouri p {
+        line-height: 1.5;
+        padding: 20px 40px;
+        margin: 0%;
+        text-align: center;
+        color: rgb(92, 91, 91);
+    }
+
+    .imgone {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fouri>div:nth-child(odd) {
+        background-color: rgb(228, 228, 228);
+    }
+
+    .r1 h2 {
+        color: white;
+        margin: 0%;
+        padding: 10px;
+    }
+
+    .box2 {
+        background-color: rgb(51, 127, 213);
+        margin-top: 20px;
+
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .r2,
+    .r3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+
+    .r2>div,
+    .r3>div {
+        width: 22%;
+    }
+
+    .r2>div img,
+    .r3>div img {
+        border-style: solid;
+        border-width: 2px;
+        box-shadow: 0 0 5px 2px #d1cece;
+    }
+
+    aside {
+        background-color: rgb(188, 191, 195);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .r4 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .r4>div:first-child {
+        width: 30%;
+        background-color: white;
+    }
+
+    .r4>div h3 {
+        background-color: rgb(51, 127, 213);
+        color: white;
+        margin: 0%;
+        padding: 10px;
+    }
+
+    .r4>div:nth-child(2) {
+        width: 70%;
+        background: url(/Iceclean-flex/img/nurse2.jpg);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .opac {
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 30px;
+    }
+
+    .r4 p {
+        color: rgb(0, 136, 255);
+        font-size: large;
+        padding: 5px 0px 5px 10px;
+    }
+
+    .opac p {
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row {
+        width: 40%;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .row button {
+        padding: 10px;
+        color: rgba(51, 127, 213, 0.862);
+        border: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box3,
+    .icon1>i {
+        color: rgba(9, 89, 160, 0.768)
+    }
+
+    .last {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 0px;
+    }
+
+    .last>div {
+        width: 23%;
+    }
+
+    .last h3 p {
+        padding: 0%;
+    }
+
+    ul {
+        padding: 0%;
+    }
+
+    li {
+        list-style: none;
+        line-height: 1.5;
+    }
+
+    .footericon {
+        margin: 0%;
+    }
+
+    .footericon img {
+        width: 25%;
+        display: inline;
+        padding: 5px;
+    }
+
+    @media(max-width:576px) {
+        .box>div {
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon {
+            text-align: center;
+        }
+
+        .fouri>div {
+            width: 50%;
+        }
+
+        .r2>div,
+        .r3>div {
+            width: 50%;
+        }
+
+        .r4>div:first-child {
+            width: 100%;
+        }
+
+        .r4>div:nth-child(2) {
+            width: 100%;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        .last>div {
+            width: 100%;
+        }
+        .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+        
+    }
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="full">
+            <div class="box">
+                <div class="contact">
+                    <div><i class="fa-regular fa-envelope"></i>sales@icaclean.ie</div>
+                    <div><i class="fa-regular fa-phone-volume"></i> +353(0)1 4601277</div>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-square-twitter fa-2x"></i>
+                    <i class="fa-brands fa-square-youtube fa-2x"></i>
+                    <i class="fa-solid fa-thumbs-up fa-2x"></i>
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="box">
+                <div class="ice"><img src="/Iceclean-flex(Resp)/img/unnamed.png" alt=""></div>
+                <div class="form">
+                    <input type="text" name="search" placeholder="Search">
+                    <div class="form1"><input type="button"  name="but"><i class="fa fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="box1">
+                <div class="anc">
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">INDUSTRY SECTOR</a>
+                    <a href="#">SPARE PARTS</a>
+                    <a href="#">CLEANING SUPPLIES</a>
+                    <a href="#">FAQS</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="bgi">
+            <img style="width:100%" src="/Iceclean-flex(Resp)/img/bigimg.png" alt="">
+        </div>
+        <div class="fouri">
+            <div>
+                <img src="img/image1_orig.jpg" alt="">
+                <div class="imgone">
+                    <h2>HIRE</h2>
+                    <p>Why Buy when you can hire- ICECLEAN offers a comprehensive range of industrial cleaning equipment
+                        to cater for your needs, on shorter or long term hire.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/Screenshot_2023_0321_110053.png" alt="">
+                <div class="imgone">
+                    <h2>SALES</h2>
+                    <p>Whatever the surface we've got a cleaning machine to clean it- we've got hte best selection to
+                        industrial cleaning machines in Ireland.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/image3_orig.jpg" alt="">
+                <div class="imgone">
+                    <h2>SERVICES</h2>
+                    <p>Our experience team of engineers and trained technicians are commited to fast, cost effective
+                        repairs. Carried out at our regional service centers or on-site from our fully stocked service
+                        fleet.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/img4.png" alt="">
+                <div class="imgone">
+                    <h2>SPARE PAERTS</h2>
+                    <p>We have over 30,000 spare parts, accessories and consumables for all make a industrial cleaning
+                        machines in stock for next day delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="box2">
+
+            <div class="r1">
+                <h2>BEST SELLERS</h2>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="r2">
+                <div>
+                    <img src="img/Screenshot_2023_0321_195859.png" alt="">
+                    <h3>GENIE E</h3>
+                </div>
+                <div>
+                    <img src="img/Screenshot_2023_0321_195921.png" alt="">
+                    <h3>MAGNA</h3>
+                </div>
+                <div>
+                    <img src="img/Screenshot_2023_0321_195939.png" alt="">
+                    <h3>ORBIS ECO 400</h3>
+                </div>
+                <div>
+                    <img src="img/Screenshot_2023_0321_200010.png" alt="">
+                    <h3>MULTIWASH MW340</h3>
+                </div>
+            </div>
+            <div class="r3">
+                <div>
+                    <img src="img/Screenshot_2023_0321_195859.png" alt="">
+                    <h3>GENIE E</h3>
+                </div>
+                <div>
+                    <img src="img/Screenshot_2023_0321_195921.png " alt="">
+                    <h3>MAGNA</h3>
+                </div>
+                <div>
+                    <img src="img/Screenshot_2023_0321_195939.png" alt="">
+                    <h3>ORBIS ECO 400</h3>
+                </div>
+                <div>
+                    <img src="img/Screenshot_2023_0321_200010.png" alt="">
+                    <h3>MULTIWASH MW340</h3>
+                </div>
+            </div>
+        </div>
+    </article>
+    <aside>
+        <div class="box2" style="margin: 20px 0px">
+            <div class="r1">
+                <h2>SELECT YOUR INDUSTRY</h2>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="r4">
+                <div>
+                    <h3>Health Care</h3>
+                    <p>Bakery & Food Manufacturing</p>
+                    <p>Construction</p>
+                    <p>Facilities Management & Contract Cleaners</p>
+                    <p>Education</p>
+                    <p>Retail</p>
+                    <p>Government & Local Authorities</p>
+                    <p>Industry and Manyfacturing</p>
+                    <p>Warhouse and Distribution</p>
+                    <p>Hospitality</p>
+                </div>
+                <div>
+                    <div class="opac">
+                        <p> ICECLEAN offers a comprehensive range of Health Sector certified Scrubber-dryers,
+                            industrial sweepers, industrial vacuum cleaners and industrial pressure washers to help keep
+                            your
+                            premises clean and safe.
+                        </p>
+                        <p>
+                            Regular cleaning of production areas is paramount to not only ensure your building
+                            complies with hygiene standards, but also to give you:
+                        </p>
+                        <ul>
+                            <li>Safe and clean floors</li>
+                            <li>High-quality environment</li>
+                            <li>Cost effective cleaning solutions</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <header>
+        <div class="footer">
+            <div class="row">
+                <h2>IRELAND'S LEADING CLEANING MACHINE COMPANY</h2>
+                <button>ABOUT ICECLEAN</button>
+                <button>ORDER MACHINE DEMO</button>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="box3">
+            <div class="last">
+                <div>
+                    <h3>CONTACT US</h3>
+                    <p>ICE-Industrial Cleaning Equipment Unit 5 Western Business Park Oak Close, Dublin 12</p>
+                    <p>+353(0)1 4601277</p>
+                    <p><i class="fa-regular fa-envelope"></i>sales@icaclean.ie</p>
+                    <h3>CONNECT WITH US</h3>
+                    <div class="icon1">
+                        <i class="fa-brands fa-square-twitter fa-2x"></i>
+                        <i class="fa-brands fa-square-youtube fa-2x"></i>
+                        <i class="fa-solid fa-thumbs-up fa-2x"></i>
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3>CUSTOMER SUPPORT</h3>
+                    <ul>
+                        <li>Orders and Returns</li>
+                        <li>View Cart</li>
+                        <li>Login</li>
+                        <li>Sitemap</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR LINKS</h3>
+                    <ul>
+                        <li>Products</li>
+                        <li>Industry Sectors</li>
+                        <li>Spare parts</li>
+                        <li>Cleaning Supplies</li>
+                        <li>Faqs</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/footer-logo.png" alt="">
+                    <p>Our team is here to help you save time and money, and we achieve this by understanding your
+                        cleaning equipment needs and providing you with the most cost-effective and customised cleaning
+                        solutions</p>
+                    <p class="footericon">
+                        <img src="img/visa (2).svg" alt="">
+                        <img src="img/visa-electron.svg" alt="">
+                        <img src="img/jcb.svg" alt="">
+                        <img src="img/maestro-old.svg" alt="">
+                        <img src="img/mastercard.svg" alt="">
+                    </p>
+                    <div>
+                        <img src="img/online-payments.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
